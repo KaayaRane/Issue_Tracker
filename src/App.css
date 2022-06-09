@@ -1,38 +1,66 @@
 .App {
+  text-align: left;
+}
+
+body{
+  background: #FFDAF7;
+}
+
+@font-face {
+  font-family: "Roboto";
+}
+
+body, body * {
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  font-size: 65px;
+  color: #9148CA;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+button {
+  cursor: pointer;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.grey-card-container {
+  max-width: 725px;
+  margin: auto;
+  background: #F5EEEE;
+  -webkit-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
+  -moz-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
+  border-radius: 5px;
+  padding: 40px 50px 30px;
+  max-height: 360px;
+  overflow: hidden;
+  overflow-y: scroll;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.view-button {
+    border-radius: 5px;
+    background: #fff;
+    color: #5186D4;
+    border: none;
+    -webkit-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
+    -moz-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
+    padding: 15px 30px;
+    font-size: 16px;
+    margin-top: 15px;
 }
 
-.App-link {
-  color: #61dafb;
+.active-button {
+  background: #F6CB5C;
+  color: #fff;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.view-selection-div {
+    display: flex;
+    justify-content: space-between;
+    max-width: 500px;
+    margin: auto;
+    margin-top: 30px;
 }
